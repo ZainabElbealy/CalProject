@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: (-50%,-50%);
+}
+ */
+
+
+ .container{
+    width: 400px;
+ }
+
+ .result{
+    width: 88%;
+    height: 33px;
+ }
+
+ .clear{
+    width: 88%;
+ }
+
+
+ @media screen and (min-width:576px) and (max-width:991px){
+    .container{
+        width: 200px;
+     }
+     
+
+    
+ }
+
+ @media screen  and (max-width:575px){
+    .container{
+        width: 150px;
+     }
+
+     
+.btn{
+    width: 20px;
+}
+.equal{
+    width: 20px;
+}
+
+    
+ }
