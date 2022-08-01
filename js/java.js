@@ -18,11 +18,18 @@ myBtns.forEach((show)=>{
 
 myEqual.addEventListener('click',()=>{
     // console.log(eval())
-    myResult.value=eval(myResult.value)
+    
+    if (myResult.value===''){
+        myResult.value=''
+    }
+    else{
+        myResult.value=eval(myResult.value)
+    }
 })
 
 myClear.addEventListener('click',()=>{
     myResult.value=''
+
 })
 
 
