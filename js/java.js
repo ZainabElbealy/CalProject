@@ -1,9 +1,10 @@
-let myBtns , myEqual , myClear ,myResult;
+let myBtns , myEqual , myClear ,myResult , myTime , myAC;
 
 myBtns = document.querySelectorAll('.btns .btn')
 myEqual= document.querySelector('.equal')
 myClear= document.querySelector('.clear')
 myResult=document.querySelector('.result')
+myAC=document.querySelector('.lastDelete')
 myTime=document.querySelector('.Time h4')
 
 
@@ -29,6 +30,15 @@ myEqual.addEventListener('click',()=>{
 
 myClear.addEventListener('click',()=>{
     myResult.value=''
+
+})
+
+myAC.addEventListener('click',()=>{
+
+    let myNewAC= myResult.value.toString()
+//    let y= myNewAC.pop()
+//    myResult.value=y
+ myResult.value=myNewAC.slice(0,-1)
 
 })
 
